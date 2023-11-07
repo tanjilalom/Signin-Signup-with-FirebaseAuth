@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sassooninfantrgregular"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="50sp"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/editSignUpFullName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/text_boarder"
+            android:fontFamily="@font/sassooninfantrgregular"
+            android:gravity="center"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editSignUpEmail"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sassooninfantrgregular"
+            android:background="@drawable/text_boarder"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sassooninfantrgregular"
+                android:text="+ 88"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/editSignUpMobile"
+                android:hint="Mobile Number"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/sassooninfantrgregular"
+                android:background="@drawable/text_boarder"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/editSignUpPassword"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/sassooninfantrgregular"
+            android:background="@drawable/text_boarder"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/signup_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_corner_btn"
+            android:fontFamily="@font/sassooninfantrgregular"
+            android:onClick="signupFunction"
+            android:text="Sign Up" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

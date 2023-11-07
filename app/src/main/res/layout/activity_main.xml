@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90sp"
+        android:fontFamily="@font/sassooninfantrgregular"
+        android:gravity="center"
+        android:text="Login "
+        android:textColor="@color/purple_500"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/editloginemail"
+        android:layout_width="300sp"
+        android:layout_height="60dp"
+        android:layout_margin="10sp"
+        android:background="@drawable/text_boarder"
+        android:fontFamily="@font/sassooninfantrgregular"
+        android:gravity="center"
+        android:hint="Email"
+        android:textStyle="bold"
+        />
+
+
+    <EditText
+        android:id="@+id/editloginpass"
+        android:layout_width="300sp"
+        android:layout_height="60dp"
+        android:layout_margin="10sp"
+        android:background="@drawable/text_boarder"
+        android:fontFamily="@font/sassooninfantrgregular"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        app:passwordToggleEnabled="true"
+
+        />
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corner_btn"
+        android:text="Login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="OR"
+        />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/rounded_corner_btn"
+        android:text="Sign up " />
+
+    <TextView
+        android:id="@+id/attempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="17sp"
+        android:text="Number of Incorrect Attempts"
+
+        />
+
+</LinearLayout>
