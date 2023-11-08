@@ -30,7 +30,6 @@
             android:textSize="50sp"
             android:textStyle="bold"/>
 
-
         <EditText
             android:id="@+id/editSignUpFullName"
             android:layout_width="match_parent"

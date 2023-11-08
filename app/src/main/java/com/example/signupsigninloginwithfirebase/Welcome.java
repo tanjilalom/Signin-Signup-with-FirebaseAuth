@@ -14,8 +14,6 @@ import org.xml.sax.helpers.XMLFilterImpl;
 
 public class Welcome extends AppCompatActivity {
     MediaPlayer mediaPlayer;
-    int loopCount = 0;
-    private static final int MAX_LOOP_COUNT = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
